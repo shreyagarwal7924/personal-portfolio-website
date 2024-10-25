@@ -3,11 +3,11 @@ import { styled, ThemeProvider } from 'styled-components'
 import './App.css'
 import { darkTheme } from './utils/Themes';
 import Navbar from './components/Navbar';
-import Herosection from './components/HeroSection';
+import Aboutsection from './components/About';
 import Skills from './components/Skills';
-import Education from './components/Education';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 const Body = styled.div `
 background-color: ${({theme}) => theme.bg};
@@ -34,11 +34,11 @@ function App() {
     <Router>
     <Navbar />
     <Body>
-      <Herosection />
+      <Aboutsection />
       <Wrapper>
         <Skills />
         <Experience />
-        <Education />
+        <Projects />
       </Wrapper>
     </Body>
     </Router>

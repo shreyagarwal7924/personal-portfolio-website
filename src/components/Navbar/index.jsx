@@ -3,6 +3,7 @@ import { styled, useTheme } from 'styled-components'
 import { Link as LinkR } from 'react-router-dom';
 import { DiCssdeck } from "react-icons/di";
 import {FaBars}from "react-icons/fa"
+import { Bio } from '../../data/constants';
 
 const Nav = styled.div `
 background-color: ${({theme}) => theme.card_light};
@@ -97,29 +98,46 @@ padding: 0 6px;
 }
 `;
 
-const GitHubButton = styled.button `
-background-color: transparent;
-color: ${({theme}) => theme.primary};
-border: 1.8px solid ${({ theme }) => theme.primary};
+const GitHubButton = styled.a`
+  border: 1.8px solid #3498DB;
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: #3498DB;
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.6s ease-in-out;
-    :hover {
-      background: ${({ theme }) => theme.primary};
-      color: ${({ theme }) => theme.white};     
-    }
-    @media screen and (max-width: 768px) { 
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+  
+  &:hover {
+    background: linear-gradient(225deg, #3498DB 0%, #2980B9 100%);
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+  }
+  
+  @media screen and (max-width: 768px) { 
     font-size: 14px;
-    }
+  }
+`;
+
+const MobileGitHubButton = styled(GitHubButton)`
+  padding: 10px 16px;
+  background: linear-gradient(225deg, #3498DB 0%, #2980B9 100%);
+  color: white;
+  width: max-content;
+  border: none;
+  box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(52, 152, 219, 0.5);
+  }
 `;
 
 const Span = styled.div`
@@ -191,10 +209,9 @@ const Navbar = () => {
           <NavLink href='#skills'>Skills</NavLink>
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
         </NavItems>
-        <ButtonContainer>
-          <GitHubButton> GitHub Profile</GitHubButton>
+        <ButtonContainer> 
+          <GitHubButton href= {Bio.github} target="_blank"> GitHub Profile</GitHubButton>
         </ButtonContainer>
       </NavContainer>
       {
@@ -228,19 +245,9 @@ const Navbar = () => {
             }}>
               Projects
             </MobileMenuLink>
-            <MobileMenuLink
-            href="#education"
-            onClick={() => {
-              setOpen(!open)
-            }}>
-              Education
-            </MobileMenuLink>
-            <GitHubButton style={{
-              padding: '10px 16px',
-              background: `${theme.primary}`, 
-              color: 'white',width: 'max-content'}} 
-              href={Bio.github} target="_blank">Github Profile
-              </GitHubButton>
+            <MobileGitHubButton href={Bio.github} target="_blank">
+              Github
+            </MobileGitHubButton>
           </MobileMenu>
         )
       }

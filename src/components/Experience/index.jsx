@@ -11,6 +11,7 @@ import ExperienceCard from '../cards/ExperienceCard';
 import { experiences } from '../../data/constants';
 
 const Container = styled.div`
+    background-color: ${({theme}) => theme.bgLight};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,8 +72,6 @@ const TimelineSection = styled.div`
     justify-content: center;
     gap: 12px;
 `;
-
-
 
 const index = () => {
     return (

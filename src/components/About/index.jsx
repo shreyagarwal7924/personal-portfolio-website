@@ -3,8 +3,9 @@ import { styled } from 'styled-components'
 import Typewriter from "typewriter-effect"
 import { Bio } from '../../data/constants';
 import BgAnimation from '../bgAnimation';
+import HeroImg from '../../images/HeroImage.png'
 
-const HeroContainer = styled.div`
+export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
   justify-content: center;
@@ -19,9 +20,10 @@ const HeroContainer = styled.div`
   z-index: 1;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  margin-bottom: -5vw;
 `;
 
-const HeroBg = styled.div`
+export const HeroBg = styled.div`
   position: absolute;
   display: flex;
   justify-content: end;
@@ -45,7 +47,7 @@ const HeroBg = styled.div`
   }
 `;
 
-const HeroInnerContainer = styled.div`
+export const HeroInnerContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -57,7 +59,7 @@ const HeroInnerContainer = styled.div`
     flex-direction: column;
   }
 `;
-const HeroLeftContainer = styled.div`
+export const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
   @media (max-width: 960px) {
@@ -77,7 +79,7 @@ const HeroLeftContainer = styled.div`
   }
 `;
 
-const HeroRightContainer = styled.div`
+export const HeroRightContainer = styled.div`
   width: 100%;
   display: flex;
   order: 2;
@@ -95,7 +97,27 @@ const HeroRightContainer = styled.div`
   }
 `;
 
-const Title = styled.div`
+export const Img = styled.img`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 50%;
+  border: 2px solid ${({ theme }) => theme.primary};
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
+`;
+
+export const Title = styled.div`
   font-weight: 700;
   font-size: 50px;
   color: ${({ theme }) => theme.text_primary};
@@ -111,14 +133,13 @@ const Title = styled.div`
   }
 `;
 
-const TextLoop = styled.div`
+export const TextLoop = styled.div`
   font-weight: 600;
   font-size: 32px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
-  white-space: nowrap;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -129,13 +150,12 @@ const TextLoop = styled.div`
   }
 `;
 
-const Span = styled.span`
+export const Span = styled.span`
   color: ${({ theme }) => theme.primary};
-  display: inline-block;
   cursor: pointer;
 `;
 
-const Description = styled.div`
+export const SubTitle = styled.div`
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 42px;
@@ -160,69 +180,65 @@ export const ResumeButton = styled.a`
     max-width: 300px;
     text-align: center;
     padding: 16px 0;
-    color:${({ theme }) => theme.white};
+    color: #ffffff;
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
+    transition: all 0.2s ease-in-out !important;
+    background: #3498DB;
+    background: linear-gradient(225deg, #3498DB 0%, #2980B9 100%);
+    background: -moz-linear-gradient(225deg, #3498DB 0%, #2980B9 100%);
+    background: -webkit-linear-gradient(225deg, #3498DB 0%, #2980B9 100%);
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+
     &:hover {
         transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
+        transition: all 0.4s ease-in-out;
+        box-shadow: 0 6px 8px rgba(52, 152, 219, 0.5);
+        filter: brightness(1.1);
     }    
     
     @media (max-width: 640px) {
         padding: 12px 0;
         font-size: 18px;
     } 
-
 `;
 
-const Herosection = () => {
+const Aboutsection = () => {
   return (
-    <div id="about">
-      <HeroContainer>
-        <HeroBg>
-          <BgAnimation />
-        </HeroBg>
-        <HeroInnerContainer> 
-          <HeroLeftContainer>
-            <Title>
-              Hi, I am <br /> 
-              {Bio.name}
-            </Title>
-            <TextLoop>
-              I'm interested in
-              <Span>
-                <Typewriter 
-                options={{
-                  strings: Bio.interests,
-                  autoStart: true,
-                  loop: true
-                }}/>
-              </Span>
-            </TextLoop>
-            <Description>
-              {Bio.description}
-            </Description>
-            <ResumeButton href={Bio.resume} target="_blank">
-              Check Resume
-            </ResumeButton>
-          </HeroLeftContainer>
-          <HeroRightContainer>
-          </HeroRightContainer>
-        </HeroInnerContainer>
-      </HeroContainer>
-    </div>
+      <div id="about">
+          <HeroContainer>
+              <HeroBg>
+                  <BgAnimation />
+              </HeroBg>
+              <HeroInnerContainer >
+                  <HeroLeftContainer id="Left">
+                      <Title>Hi, I am <br /> {Bio.name}</Title>
+                      <TextLoop>
+                          I like
+                          <Span>
+                              <Typewriter
+                                  options={{
+                                      strings: Bio.interests,
+                                      autoStart: true,
+                                      loop: true,
+                                  }}
+                              />
+                          </Span>
+                      </TextLoop>
+                      <SubTitle>{Bio.description}</SubTitle>
+                      <ResumeButton href={Bio.resume} target='display'> Resume</ResumeButton>
+                  </HeroLeftContainer>
+
+                  <HeroRightContainer id="Right">
+                  <Img src={HeroImg} alt="hero-image" />
+                  </HeroRightContainer>
+              </HeroInnerContainer>
+
+          </HeroContainer>
+      </div>
   )
 }
 
-export default Herosection
+export default Aboutsection
