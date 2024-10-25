@@ -1,3 +1,9 @@
+import Light from "../images/Light.jpeg"
+import Minewsweeper from "../images/Minesweeper.jpeg"
+import MedicineSalesTracker from "../images/MedicineSalesTracker.png"
+import ZType from "../images/ZType.jpg"
+import PipeFantasy from "../images/PipeFantasy.png"
+import StockSimulationApplication from "../images/StockSimulationApplication.png"
 
 export const Bio = {
     name: "Shrey Agarwal",
@@ -159,8 +165,7 @@ export const Bio = {
       date: "July 2024 - Present",
       description:
         "Medicine Sales Tracker is a full-stack web application designed to help pharmacies and medical stores manage their inventory and track sales of medicines. Built with the MERN stack (MongoDB, Express.js, React.js, and Node.js), this application provides a user-friendly interface for efficient product management and sales tracking.",
-      image:
-        "https://private-user-images.githubusercontent.com/149896008/370892945-2226b11a-84f8-4ece-bde6-6b6c78560e4e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk4MjgzODQsIm5iZiI6MTcyOTgyODA4NCwicGF0aCI6Ii8xNDk4OTYwMDgvMzcwODkyOTQ1LTIyMjZiMTFhLTg0ZjgtNGVjZS1iZGU2LTZiNmM3ODU2MGU0ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAyNVQwMzQ4MDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YTM2Y2YxM2RjNWZkOWU4NjY5NGE0Zjc5ODU5MWFjYTVmMmUzMTcyM2RiNGQ1YjkxZTI4MmFlYmJkNTFmYWEzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.XQfZoM5Dws2J5bWZZptKc3q32A0fmCiTBORrHgo-fHE",
+      image: MedicineSalesTracker,
       tags: [
         "Mongo DB",
         "Express JS",
@@ -178,8 +183,7 @@ export const Bio = {
       date: "May 2024 - June 2024",
       description:
         "Developed a Java-based Stock Portfolio Tracker application using Swing for the graphical user interface, implementing the Model-View-Controller (MVC) architecture for improved modularity and maintainability.",
-      image:
-        "https://private-user-images.githubusercontent.com/149896008/370892311-dbd43ff0-b02c-43d8-9f4b-5cce6e46659d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk4Mjg0MzcsIm5iZiI6MTcyOTgyODEzNywicGF0aCI6Ii8xNDk4OTYwMDgvMzcwODkyMzExLWRiZDQzZmYwLWIwMmMtNDNkOC05ZjRiLTVjY2U2ZTQ2NjU5ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAyNVQwMzQ4NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MDNjNzVhMmRhN2MzNjNhOGViOTUwY2I3NWIwMmQyMWVlN2UwYzdiY2U1ZmJiYmZhMDEzMTJlZmM0Y2MyMTQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._GbjIapy8i8c9klOEbl1Pu5qGujBaGLEZ0lzpDQYgAE",
+      image: StockSimulationApplication,
       tags: ["Java", "SwingUI", "Git"],
       category: "web app",
       github: "Repository available on request",
@@ -190,8 +194,7 @@ export const Bio = {
       date: "Jan 2023 - Mar 2023",
       description:
         "Designed and developed a Minesweeper game using Java.",
-      image:
-        "https://private-user-images.githubusercontent.com/149896008/380003059-7d00567e-1088-4b47-a314-e47bb55b7142.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk4Mjc3NTcsIm5iZiI6MTcyOTgyNzQ1NywicGF0aCI6Ii8xNDk4OTYwMDgvMzgwMDAzMDU5LTdkMDA1NjdlLTEwODgtNGI0Ny1hMzE0LWU0N2JiNTViNzE0Mi5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTAyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEwMjVUMDMzNzM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGY5ZGQ1YjU1ZDc0MDhkZWFmMWRjNTFkODU0MDkzODY2NGY1ZWRmZWExNzZlNjlhYWM4NWIxOGQxOGIxMDkxNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.NP4cvPbdI8xlrElYEGksAS0GDql_AcR3IiqBE9KrFBc",
+      image: Minewsweeper,
       tags: [
         "Java",
         "Git",
@@ -206,8 +209,7 @@ export const Bio = {
       date: "Mar 2024 - April 2024",
       description:
         "Designed a game using Djikstra's algorithm",
-      image:
-        "https://private-user-images.githubusercontent.com/149896008/380003350-c4331bb6-6f1a-4979-92a1-0b71cdc87170.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk4Mjc4NzIsIm5iZiI6MTcyOTgyNzU3MiwicGF0aCI6Ii8xNDk4OTYwMDgvMzgwMDAzMzUwLWM0MzMxYmI2LTZmMWEtNDk3OS05MmExLTBiNzFjZGM4NzE3MC5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTAyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEwMjVUMDMzOTMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWU4NzVmZDNmM2YzZTQ1ZGQ0YTBlZTA2ZWFmZTRkOWNiZThhMGJhMDllYmY5NGQ5ZWRkMzQ1ODQ4NDM4ZWIzNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.8SLv_1B4F0XfVbOeXgrVe7Hd6ghfTGLJ5z54pI2SVKo",
+      image: Light,
       tags: ["Java", "DSA", "Git"],
       category: "web app",
       github: "",
@@ -219,8 +221,7 @@ export const Bio = {
       date: "Jan 2024 - Feb 2024",
       description:
         "Designed a user-friendly word game in Java",
-      image:
-        "https://private-user-images.githubusercontent.com/149896008/380002703-fd7d728e-99c4-4e4e-9840-c192868c5017.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk4Mjc2NTAsIm5iZiI6MTcyOTgyNzM1MCwicGF0aCI6Ii8xNDk4OTYwMDgvMzgwMDAyNzAzLWZkN2Q3MjhlLTk5YzQtNGU0ZS05ODQwLWMxOTI4NjhjNTAxNy5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAyNVQwMzM1NTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NzIxZmVhMmJlZjRkZTFjNmVlMzBkMjdmNDYyMDRmMDQyNWIxZTY1NmQ5OTljYjZkZTc3ZTU5NDM5ZTBmY2Q5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.MqtNANAEakso7peLFWrFi6hRVpLNx6BEtB6LmUQnZZE",
+      image: ZType,
       tags: ["Java", "Git"],
       category: "web app",
       github: "Repositiry available on request",
@@ -232,8 +233,7 @@ export const Bio = {
       date: "Oct 2023 - Nov 2023",
       description:
         "Developed a game in DrRacket",
-      image:
-        "https://private-user-images.githubusercontent.com/149896008/380004398-d218ffef-9c36-47b2-938b-c8df78285052.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk4MjgxOTgsIm5iZiI6MTcyOTgyNzg5OCwicGF0aCI6Ii8xNDk4OTYwMDgvMzgwMDA0Mzk4LWQyMThmZmVmLTljMzYtNDdiMi05MzhiLWM4ZGY3ODI4NTA1Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAyNVQwMzQ0NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NWVkZDA0N2NiZDNkMmJlYjc2Y2UzY2E2NDczNDRmMGYxZGYxMjBlYmJkYzgwOWE1YjNjNGI3OWQxNGFhOTc1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2WmbUihlPahumDT0QhQiI3Aveh8rFzWNnWzx0tCzY6g",
+      image: PipeFantasy,
       tags: ["DrRacket"],
       category: "web app",
       github: "",
