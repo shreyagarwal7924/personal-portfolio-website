@@ -13,12 +13,13 @@ export const Bio = {
       "Backend",
       "Problem Solving",
       "Innovation",
+      "Learning"
     ],
     description:
       "I'm currently pursuing a Bachelor of Science degree in Computer Science and Business Administration at Northeastern University. I've honed my skills in market research, teamwork, and leadership through hands-on experiences as an intern at both Jio and Careerera. My educational journey, complemented by these practical engagements, shapes a foundation in both technical and business domains, positioning me to contribute effectively to future technological and administrative challenges.",
     github: "https://github.com/shreyagarwal7924",
     resume:
-      "https://drive.google.com/file/d/1YI_HkhyrX8nGZzJ9eoBDL6ptBZpWUog4/view?usp=sharing",
+      "https://drive.google.com/file/d/1KKsOj2Fcv8pNs12aXvuNI6BYSj9PpNM8/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/shreyagarwal7924/",
   };
   
