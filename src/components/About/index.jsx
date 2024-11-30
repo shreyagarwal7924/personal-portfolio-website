@@ -1,9 +1,8 @@
-import React from 'react'
 import { styled } from 'styled-components'
 import Typewriter from "typewriter-effect"
 import { Bio } from '../../data/constants';
 import BgAnimation from '../bgAnimation';
-import HeroImg from '../../images/HeroImage.png'
+import HeroImg from '../../assets/HeroImage.png'
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};

@@ -1,9 +1,10 @@
-import Light from "../images/Light.jpeg"
-import Minewsweeper from "../images/Minesweeper.jpeg"
-import MedicineSalesTracker from "../images/MedicineSalesTracker.png"
-import ZType from "../images/ZType.jpg"
-import PipeFantasy from "../images/PipeFantasy.png"
-import StockSimulationApplication from "../images/StockSimulationApplication.png"
+import Light from "../assets/Light.png"
+import Minewsweeper from "../assets/Minesweeper.png"
+import MedicineSalesTracker from "../assets/MedicineSalesTracker.png"
+import ZType from "../assets/ZType.jpg"
+import PipeFantasy from "../assets/PipeFantasy.png"
+import StockSimulationApplication from "../assets/StockSimulationApplication.png"
+import ner from "../assets/ner.png"
 
 export const Bio = {
     name: "Shrey Agarwal",
@@ -157,6 +158,21 @@ export const Bio = {
       ],
       doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
     },
+    {
+      id: 0,
+      img: ner,
+      role: "Software Developer",
+      company: "Northeastern Electric Racing",
+      date: "September 2024 - Present",
+      description: "Contributed to the development of the FinishLine platform by creating React components for data visualization, including line, bar, and pie charts, and implementing RESTful API endpoints to manage graphs and views. ",
+      skills: [
+        "ReactJS",
+        "TypeScript",
+        "Express.js",
+        "Postman",
+        "Prisma"
+      ],
+    }
   ];
   
   export const projects = [
