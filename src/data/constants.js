@@ -5,6 +5,7 @@ import ZType from "../assets/ZType.jpg"
 import PipeFantasy from "../assets/PipeFantasy.png"
 import StockSimulationApplication from "../assets/StockSimulationApplication.png"
 import ner from "../assets/ner.png"
+import FitnessTracker from "../assets/FitnessTracker.jpeg"
 
 export const Bio = {
     name: "Shrey Agarwal",
@@ -177,6 +178,17 @@ export const Bio = {
   
   export const projects = [
     {
+      id: 0,
+      title: "Fitness Tracker Application",
+      date: "Oct 2024 - Dec 2024",
+      description: "A fitness tracker application with a MySQL database, enabling secure storage of user health data and goals. Built a responsive React.js front-end and integrated RESTful APIs with Express.js for seamless backend communication and personalized user recommendations.",
+      image: FitnessTracker,
+      tags: ["JavaScript", "React", "Express", "MySQL", "Material UI" , "Git"],
+      category: "web app",
+      github:"",
+      webapp:"",
+    },
+    {
       id: 9,
       title: "Medicine Sales Tracker",
       date: "July 2024 - Present",
@@ -184,12 +196,12 @@ export const Bio = {
         "Medicine Sales Tracker is a full-stack web application for inventory management and tracking sales.",
       image: MedicineSalesTracker,
       tags: [
-        "Mongo DB",
-        "Express JS",
-        "React JS",
-        "Node JS",
-        "Git",
+        "JavaScript",
+        "React",
+        "Express",
+        "MongoDB",
         "Material UI",
+        "Git"
       ],
       category: "web app",
       github: "https://github.com/shreyagarwal7924/Medicine-Sales-Tracker",
