@@ -125,19 +125,27 @@ const Projects = ({openModal,setOpenModal}) => {
             }
             <Divider />
             {toggle === 'web app' ?
-              <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+              <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APPS</ToggleButton>
               :
-              <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+              <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APPS</ToggleButton>
+            }
+            <Divider />
+          {toggle === 'ML' ?
+              <ToggleButton active value="ML" onClick={() => setToggle('ML')}>Machine Learning</ToggleButton>
+              :
+              <ToggleButton value="ML" onClick={() => setToggle('ML')}>Machine Learning</ToggleButton>
             }
           </ToggleButtonGroup>
           <CardContainer>
             {toggle === 'all' && projects
               .map((project) => (
+                // eslint-disable-next-line react/jsx-key
                 <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
               ))}
             {projects
               .filter((item) => item.category == toggle)
               .map((project) => (
+                // eslint-disable-next-line react/jsx-key
                 <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
               ))}
           </CardContainer>
