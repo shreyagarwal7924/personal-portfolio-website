@@ -9,16 +9,19 @@ import FitnessTracker from "../assets/FitnessTracker.jpeg"
 import MemoraImage from "../assets/memora-logo.png"
 import HackBeanpot from "../assets/hackbeanpot.jpeg"
 import FFR from "../assets/ffr.png"
+import Shell from "../assets/shell.png"
 
 export const Bio = {
     name: "Shrey Agarwal",
     interests: [
-      "Web development",
-      "Frontend",
-      "Backend",
+      "Data-Driven Decision Making",
+      "Software Development",
+      "Business Analytics",
+      "Frontend & Backend Engineering",
+      "Product Thinking",
       "Problem Solving",
-      "Innovation",
-      "Learning"
+      "Financial Technology",
+      "Continuous Learning"
     ],
     description:
       "I'm currently pursuing a Bachelor of Science degree in Computer Science and Business Administration at Northeastern University. I've honed my skills in market research, teamwork, and leadership through hands-on experiences as an intern at both Jio and Careerera. My educational journey, complemented by these practical engagements, shapes a foundation in both technical and business domains, positioning me to contribute effectively to future technological and administrative challenges.",
@@ -133,10 +136,10 @@ export const Bio = {
     {
       id: 0,
       img: "data:image/jpeg;base64,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",
-      role: "Market Researcher and Developer",
+      role: "Product & Research Intern",
       company: "CareerEra",
       date: "Jan 2022 - Feb 2022 ",
-      description: "Built a fully responsive and visually appealing landing page, composed detailed customer personas by analyzing demographic data and led market research initiatives.",
+      description: "I analyzed user demographics and behavioral data to create structured user personas that informed product design decisions. I used Python libraries such as pandas and matplotlib to visualize user trends, enabling data-driven insights for improving the user experience.",
       skills: [
         "ReactJS",
         "Bootstrap",
@@ -196,6 +199,17 @@ export const Bio = {
   ];
   
   export const projects = [
+    {
+      id: 0,
+      title: "Shell",
+      date: "March 2025",
+      description: "A custom shell supporting command parsing, piping, I/O redirection, and execution.",
+      image: Shell,
+      tags: ["C", "Linux", "System Programming", "Fork", "Exec", "Pipe", "Valgrind", "Git"],
+      category: "Linux",
+      github:"",
+      webapp:"",
+    },
     {
       id: 0,
       title: "Memora",
