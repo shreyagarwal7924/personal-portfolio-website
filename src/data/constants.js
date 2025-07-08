@@ -9,7 +9,7 @@ import FitnessTracker from "../assets/FitnessTracker.jpeg"
 import MemoraImage from "../assets/memora-logo.png"
 import HackBeanpot from "../assets/hackbeanpot.jpeg"
 import FFR from "../assets/ffr.png"
-import Shell from "../assets/shell.png"
+import Shell from "../assets/Shell.png"
 import coop from "../assets/coop.png"
 
 export const Bio = {
