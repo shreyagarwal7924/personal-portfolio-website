@@ -137,10 +137,10 @@ const Projects = ({openModal,setOpenModal}) => {
               <ToggleButton value="ML" onClick={() => setToggle('ML')}>Machine Learning</ToggleButton>
             }
             <Divider />
-            {toggle === 'Linux' ?
-              <ToggleButton active value="Linux" onClick={() => setToggle('Linux')}>Linux</ToggleButton>
+            {toggle === 'System Programming' ?
+              <ToggleButton active value="System Programming" onClick={() => setToggle('Linux')}>System Programming</ToggleButton>
               :
-              <ToggleButton value="Linux" onClick={() => setToggle('Linux')}>Linux</ToggleButton>
+              <ToggleButton value="System Programming" onClick={() => setToggle('System Programming')}>System Programming</ToggleButton>
             }
           </ToggleButtonGroup>
           <CardContainer>
