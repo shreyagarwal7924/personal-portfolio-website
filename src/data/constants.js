@@ -15,12 +15,11 @@ import coop from "../assets/coop.png"
 export const Bio = {
     name: "Shrey Agarwal",
     interests: [
-      "Data-Driven Decision Making",
-      "Software Development",
-      "Business Analytics",
-      "Frontend & Backend Engineering",
-      "Problem Solving",
       "Financial Technology",
+      "Software Development",
+      "Backend Engineering",
+      "Machine Learning",
+      "Web Development",
     ],
     description:
       "I'm currently pursuing a Bachelor of Science degree in Computer Science and Business Administration at Northeastern University. I've honed my skills in market research, teamwork, and leadership through hands-on experiences as an intern at both Jio and Careerera. My educational journey, complemented by these practical engagements, shapes a foundation in both technical and business domains, positioning me to contribute effectively to future technological and administrative challenges.",
